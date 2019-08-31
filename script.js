@@ -13,6 +13,7 @@ $(".txtb").on("keyup" , function(e){
           
           var edit = $("<i class='fas fa-edit'></i>").click(function(){    
           $(".txtb").val(task.text());
+          task.hide();
           })
           
           task.append(del,check,edit);
